@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+    <title>Privacy Policy | RAEF JARJAR</title>
+    <!-- Font Awesome 6 -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <!-- AOS Animation Library -->
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            overflow-x: hidden;
+        }
+
+        body {
+            font-family: 'Segoe UI', 'Inter', system-ui, -apple-system, sans-serif;
+            background-color: #000000;
+            color: #e0e0e0;
+            line-height: 1.7;
+            overflow-x: hidden;
+            width: 100%;
+            max-width: 100vw;
+        }
+
+        body::before {
+            content: "";
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="100" height="100" viewBox="0 0 100 100"><filter id="noise"><feTurbulence type="fractalNoise" baseFrequency="0.8" numOctaves="1" stitchTiles="stitch"/></filter><rect width="100" height="100" filter="url(%23noise)" opacity="0.07"/></svg>');
+            pointer-events: none;
+            z-index: 0;
+        }
+
+        .page-container {
+            position: relative;
+            z-index: 1;
+            max-width: 900px;
+            margin: 0 auto;
+            padding: 2rem 1.5rem 4rem;
+        }
+
+        @media (min-width: 768px) {
+            .page-container {
+                padding: 3rem 2rem 5rem;
+            }
+        }
+
+        /* Back button */
+        .back-link {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #50C878;
+            text-decoration: none;
+            font-size: 0.95rem;
+            font-weight: 500;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 2.5rem;
+            transition: all 0.3s ease;
+            padding: 0.5rem 1.2rem;
+            border: 1px solid rgba(80, 200, 120, 0.4);
+            border-radius: 30px;
+            backdrop-filter: blur(5px);
+            background: rgba(80, 200, 120, 0.05);
+        }
+        .back-link i {
+            font-size: 0.8rem;
+            text-shadow: 0 0 8px #50C878;
+        }
+        .back-link:hover {
+            background: #50C878;
+            color: #000;
+            box-shadow: 0 0 20px rgba(80, 200, 120, 0.6);
+            border-color: #50C878;
+            transform: translateX(-5px);
+        }
+
+        /* Main glass card */
+        .policy-card {
+            background: rgba(20, 20, 20, 0.5);
+            backdrop-filter: blur(20px);
+            -webkit-backdrop-filter: blur(20px);
+            border-radius: 24px;
+            padding: 2rem 1.8rem;
+            border: 1px solid rgba(80, 200, 120, 0.35);
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 30px rgba(80, 200, 120, 0.2);
+            transition: border-color 0.3s;
+        }
+        .policy-card:hover {
+            border-color: #50C878;
+            box-shadow: 0 20px 50px rgba(0, 0, 0, 0.9), 0 0 40px rgba(80, 200, 120, 0.3);
+        }
+        @media (min-width: 480px) {
+            .policy-card {
+                padding: 2.5rem 2.5rem;
+            }
+        }
+        @media (min-width: 768px) {
+            .policy-card {
+                padding: 3rem 3.5rem;
+            }
+        }
+
+        /* Title */
+        .policy-title {
+            font-size: 2rem;
+            font-weight: 700;
+            color: #ffffff;
+            margin-bottom: 0.5rem;
+            position: relative;
+            display: inline-block;
+            letter-spacing: 1px;
+        }
+        .policy-title::after {
+            content: '';
+            position: absolute;
+            bottom: -8px;
+            left: 0;
+            width: 50%;
+            height: 3px;
+            background: #50C878;
+            box-shadow: 0 0 15px #50C878;
+            border-radius: 2px;
+        }
+        @media (min-width: 480px) {
+            .policy-title {
+                font-size: 2.5rem;
+            }
+        }
+
+        .last-updated {
+            color: #888;
+            font-style: italic;
+            font-size: 0.9rem;
+            margin-top: 1.2rem;
+            margin-bottom: 2rem;
+            display: flex;
+            align-items: center;
+            gap: 0.5rem;
+        }
+        .last-updated i {
+            color: #50C878;
+            font-size: 0.9rem;
+            text-shadow: 0 0 6px #50C878;
+        }
+
+        .intro-text {
+            color: #bbb;
+            font-size: 1.05rem;
+            margin-bottom: 2rem;
+            line-height: 1.8;
+        }
+        .intro-text strong {
+            color: #50C878;
+            text-shadow: 0 0 8px rgba(80, 200, 120, 0.5);
+        }
+
+        /* Section headings */
+        .section-heading {
+            font-size: 1.3rem;
+            font-weight: 600;
+            color: #50C878;
+            margin-top: 2.5rem;
+            margin-bottom: 1rem;
+            display: flex;
+            align-items: center;
+            gap: 0.7rem;
+            text-shadow: 0 0 10px rgba(80, 200, 120, 0.4);
+        }
+        .section-heading i {
+            font-size: 1.1rem;
+            width: 28px;
+            height: 28px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background: rgba(80, 200, 120, 0.1);
+            border-radius: 50%;
+            border: 1px solid rgba(80, 200, 120, 0.4);
+            flex-shrink: 0;
+        }
+        @media (min-width: 480px) {
+            .section-heading {
+                font-size: 1.5rem;
+            }
+        }
+
+        .section-text {
+            color: #bbb;
+            font-size: 0.95rem;
+            line-height: 1.8;
+            margin-bottom: 1rem;
+            padding-left: 0.5rem;
+        }
+        @media (min-width: 480px) {
+            .section-text {
+                font-size: 1rem;
+                padding-left: 1rem;
+            }
+        }
+
+        .section-text a {
+            color: #50C878;
+            text-decoration: none;
+            font-weight: 500;
+            border-bottom: 1px dotted rgba(80, 200, 120, 0.5);
+            transition: all 0.2s;
+        }
+        .section-text a:hover {
+            color: #fff;
+            border-bottom-color: #fff;
+            text-shadow: 0 0 8px #50C878;
+        }
+
+        /* Divider */
+        .divider {
+            border: none;
+            border-top: 1px solid rgba(80, 200, 120, 0.15);
+            margin: 2.5rem 0 1.5rem;
+        }
+
+        /* Contact highlight */
+        .contact-highlight {
+            background: rgba(80, 200, 120, 0.05);
+            border: 1px solid rgba(80, 200, 120, 0.3);
+            border-radius: 16px;
+            padding: 1.2rem 1.5rem;
+            margin-top: 2rem;
+            backdrop-filter: blur(5px);
+        }
+        .contact-highlight p {
+            color: #ccc;
+            font-size: 0.95rem;
+            margin: 0;
+        }
+        .contact-highlight strong {
+            color: #50C878;
+        }
+
+        /* Footer back link */
+        .footer-back {
+            text-align: center;
+            margin-top: 3rem;
+        }
+        .footer-back a {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: #50C878;
+            text-decoration: none;
+            font-weight: 600;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            font-size: 0.9rem;
+            padding: 0.7rem 2rem;
+            border: 1px solid #50C878;
+            border-radius: 30px;
+            transition: all 0.3s ease;
+            backdrop-filter: blur(5px);
+        }
+        .footer-back a:hover {
+            background: #50C878;
+            color: #000;
+            box-shadow: 0 0 25px #50C878;
+            transform: translateY(-2px);
+        }
+
+        /* Responsive */
+        @media (max-width: 480px) {
+            .policy-card {
+                padding: 1.5rem 1.2rem;
+                border-radius: 20px;
+            }
+            .policy-title {
+                font-size: 1.6rem;
+            }
+            .section-heading {
+                font-size: 1.1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="page-container">
+
+        <!-- Back to portfolio -->
+        <a href="index.html" class="back-link" data-aos="fade-down" data-aos-duration="800">
+            <i class="fas fa-arrow-left"></i> Back to Portfolio
+        </a>
+
+        <!-- Main policy card -->
+        <div class="policy-card" data-aos="fade-up" data-aos-duration="1000">
+            
+            <h1 class="policy-title">Privacy Policy</h1>
+            <p class="last-updated">
+                <i class="fas fa-calendar-alt"></i> Last Updated: May 12, 2026
+            </p>
+
+            <p class="intro-text">
+                Welcome to <strong>raefjarjar.com.ly</strong>. Your privacy is critically important to us. This policy outlines how we collect, use, and protect your information.
+            </p>
+
+            <!-- Section 1 -->
+            <h2 class="section-heading">
+                <i class="fas fa-database"></i> 1. Information We Collect
+            </h2>
+            <p class="section-text">
+                We may collect non-personal identification information about users whenever they interact with our site. This may include browser name, computer type, and technical information about users' means of connection to our site, such as the operating system and the Internet service providers utilized.
+            </p>
+
+            <!-- Section 2 -->
+            <h2 class="section-heading">
+                <i class="fas fa-cookie-bite"></i> 2. Google AdSense & Cookies
+            </h2>
+            <p class="section-text">
+                This site uses <strong>Google AdSense</strong> to display advertisements. Google, as a third-party vendor, uses cookies to serve ads on our site. Google's use of the DART cookie enables it to serve ads to our users based on their visit to our site and other sites on the Internet.
+            </p>
+            <p class="section-text">
+                Users may opt-out of the use of the DART cookie by visiting the 
+                <a href="https://policies.google.com/technologies/ads" target="_blank" rel="noopener">Google Ad and Content Network privacy policy</a>.
+            </p>
+
+            <!-- Section 3 -->
+            <h2 class="section-heading">
+                <i class="fas fa-chart-pie"></i> 3. How We Use Information
+            </h2>
+            <p class="section-text">
+                We use the information collected to improve our website performance, analyze traffic patterns, and personalize the user experience through relevant advertisements. No personally identifiable information is stored or shared with third parties.
+            </p>
+
+            <!-- Section 4 -->
+            <h2 class="section-heading">
+                <i class="fas fa-shield-alt"></i> 4. Data Protection
+            </h2>
+            <p class="section-text">
+                We adopt appropriate data collection, storage, and processing practices and security measures to protect against unauthorized access, alteration, disclosure, or destruction of your personal information and data stored on our site.
+            </p>
+
+            <!-- Section 5 -->
+            <h2 class="section-heading">
+                <i class="fas fa-sync-alt"></i> 5. Changes to This Policy
+            </h2>
+            <p class="section-text">
+                Raef Jarjar has the discretion to update this privacy policy at any time. When we do, we will revise the updated date at the top of this page. We encourage users to frequently check this page for any changes to stay informed about how we are helping to protect the personal information we collect.
+            </p>
+
+            <!-- Section 6 -->
+            <h2 class="section-heading">
+                <i class="fas fa-envelope"></i> 6. Contact Us
+            </h2>
+            <p class="section-text">
+                If you have any questions about this Privacy Policy, the practices of this site, or your dealings with this site, please contact us through our website or via the details below.
+            </p>
+
+            <div class="contact-highlight">
+                <p>
+                    <i class="fas fa-globe" style="color:#50C878; margin-right:0.5rem;"></i>
+                    <strong>Website:</strong> 
+                    <a href="https://raefjarjar.com.ly/" style="color:#50C878;">https://raefjarjar.com.ly/</a>
+                </p>
+                <p style="margin-top:0.5rem;">
+                    <i class="fas fa-envelope" style="color:#50C878; margin-right:0.5rem;"></i>
+                    <strong>Email:</strong> contact@raefjarjar.com.ly
+                </p>
+            </div>
+
+            <!-- Divider -->
+            <hr class="divider">
+
+            <!-- Footer back link inside card -->
+            <div class="footer-back">
+                <a href="index.html">
+                    <i class="fas fa-arrow-left"></i> Back to Portfolio
+                </a>
+            </div>
+
+        </div>
+
+    </div>
+
+    <!-- AOS Library JS -->
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script>
+        AOS.init({
+            duration: 800,
+            once: true,
+            mirror: false,
+        });
+
+        console.log('✨ Privacy Policy page · RAEF JARJAR · Theme matched with portfolio');
+    </script>
+</body>
+</html>
