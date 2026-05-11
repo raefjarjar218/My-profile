@@ -1,0 +1,87 @@
+<svg width="256" height="256" viewBox="0 0 256 256" xmlns="http://www.w3.org/2000/svg">
+
+  <defs>
+
+    <!-- Background -->
+    <linearGradient id="bg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#030303"/>
+      <stop offset="100%" stop-color="#071811"/>
+    </linearGradient>
+
+    <!-- Emerald Gradient -->
+    <linearGradient id="emerald" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#50C878"/>
+      <stop offset="100%" stop-color="#00FFA3"/>
+    </linearGradient>
+
+    <!-- Glow -->
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Soft Shadow -->
+    <filter id="shadow">
+      <feDropShadow dx="0" dy="0" stdDeviation="10" flood-color="#00ff99" flood-opacity="0.15"/>
+    </filter>
+
+    <!-- Tech Grid -->
+    <pattern id="grid" width="24" height="24" patternUnits="userSpaceOnUse">
+      <path d="M24 0H0V24" fill="none" stroke="#00ff99" stroke-opacity="0.05" stroke-width="1"/>
+    </pattern>
+
+  </defs>
+
+  <!-- Background -->
+  <rect width="256" height="256" rx="58" fill="url(#bg)"/>
+
+  <!-- Grid -->
+  <rect width="256" height="256" rx="58" fill="url(#grid)"/>
+
+  <!-- Outer Border -->
+  <rect
+    x="5"
+    y="5"
+    width="246"
+    height="246"
+    rx="53"
+    fill="none"
+    stroke="#50C878"
+    stroke-opacity="0.16"
+    stroke-width="2"
+  />
+
+  <!-- Corner Elements -->
+  <path d="M40 76V40H76" stroke="#50C878" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+  <path d="M180 40H216V76" stroke="#50C878" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+  <path d="M216 180V216H180" stroke="#50C878" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+  <path d="M76 216H40V180" stroke="#50C878" stroke-width="4" stroke-linecap="round" opacity="0.75"/>
+
+  <!-- Glow Background -->
+  <circle cx="128" cy="128" r="62" fill="#00ff99" opacity="0.06"/>
+
+  <!-- RJ Text -->
+  <text
+    x="50%"
+    y="57%"
+    text-anchor="middle"
+    font-family="JetBrains Mono, SFMono-Regular, Consolas, monospace"
+    font-size="82"
+    font-weight="700"
+    letter-spacing="-8"
+    fill="url(#emerald)"
+    filter="url(#glow)"
+  >
+    RJ
+  </text>
+
+  <!-- Decorative Dots -->
+  <circle cx="52" cy="52" r="3" fill="#00FFA3"/>
+  <circle cx="204" cy="52" r="3" fill="#00FFA3"/>
+  <circle cx="52" cy="204" r="3" fill="#00FFA3"/>
+  <circle cx="204" cy="204" r="3" fill="#00FFA3"/>
+
+</svg>
