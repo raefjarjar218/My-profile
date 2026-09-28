@@ -1,0 +1,1645 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+<title>رائف جرجر | مطوّر ويب متكامل</title>
+<meta name="title" content="رائف جرجر | مطوّر ويب متكامل">
+<meta name="description" content="مطوّر ويب متكامل متخصص في Laravel و PHP وتقنيات الويب الحديثة. بناء منتجات رقمية موثوقة وقابلة للتوسع.">
+<meta name="keywords" content="رائف جرجر, مطور ويب متكامل, خبير Laravel, مطور PHP, تطوير ويب ليبيا, مهندس برمجيات">
+<meta name="author" content="رائف جرجر">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://raefjarjar.com.ly/ar/">
+
+<!-- Open Graph -->
+<meta property="og:type" content="website">
+<meta property="og:url" content="https://raefjarjar.com.ly/ar/">
+<meta property="og:title" content="رائف جرجر | مطوّر ويب متكامل">
+<meta property="og:description" content="مطوّر ويب متكامل متخصص في Laravel و PHP وتقنيات الويب الحديثة.">
+<meta property="og:image" content="https://raefjarjar.com.ly/file_00000000dc7471f48b5f52386b92cfcb.png">
+<meta property="og:image:width" content="1200">
+<meta property="og:image:height" content="630">
+<meta property="og:locale" content="ar_AR">
+<meta property="og:site_name" content="رائف جرجر - معرض الأعمال">
+
+<!-- Twitter -->
+<meta name="twitter:card" content="summary_large_image">
+<meta name="twitter:title" content="رائف جرجر | مطوّر ويب متكامل">
+<meta name="twitter:description" content="مطوّر ويب متكامل متخصص في Laravel و PHP وتقنيات الويب الحديثة.">
+<meta name="twitter:image" content="https://raefjarjar.com.ly/file_00000000dc7471f48b5f52386b92cfcb.png">
+
+<!-- Alternate language -->
+<link rel="alternate" hreflang="en" href="https://raefjarjar.com.ly/index.html">
+<link rel="alternate" hreflang="ar" href="https://raefjarjar.com.ly/ar/">
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "Person",
+  "name": "رائف جرجر",
+  "alternateName": "Raef Jarjar",
+  "url": "https://raefjarjar.com.ly/ar/",
+  "image": "https://raefjarjar.com.ly/file_00000000dc7471f48b5f52386b92cfcb.png",
+  "description": "مطوّر ويب متكامل متخصص في Laravel و PHP وتقنيات الويب الحديثة.",
+  "jobTitle": "مطوّر ويب متكامل",
+  "knowsAbout": ["HTML", "CSS", "JavaScript", "PHP", "Laravel", "MySQL"],
+  "sameAs": [
+    "https://github.com/raefjarjar218",
+    "https://www.linkedin.com/in/raef-jarjar-a04856408"
+  ],
+  "address": { "@type": "PostalAddress", "addressLocality": "ليبيا" },
+  "email": "contact@raefjarjar.com.ly"
+}
+</script>
+
+<link rel="icon" type="image/png" href="file_00000000dc7471f48b5f52386b92cfcb.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Amiri:wght@400;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600;700&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --paper:#FAF8F5;
+  --paper-2:#F2EDE7;
+  --white:#FFFFFF;
+  --ink:#11161B;
+  --ink-2:#39424A;
+  --muted:#6E675F;
+  --line:#E2DBD3;
+  --line-2:#CFC6BC;
+  --accent:#8C6A45;
+  --accent-2:#6E5133;
+  --dark:#101820;
+  --dark-2:#182129;
+  --dark-line:rgba(255,255,255,.10);
+  --radius:6px;
+  --shadow-sm:0 1px 2px rgba(17,22,27,.04), 0 8px 24px rgba(17,22,27,.05);
+  --shadow-md:0 12px 40px rgba(17,22,27,.10);
+  --container:1180px;
+  --ease:cubic-bezier(.22,.75,.25,1);
+}
+
+*,*::before,*::after{box-sizing:border-box;margin:0;padding:0}
+
+html{
+  scroll-behavior:smooth;
+  scroll-padding-top:88px;
+  -webkit-text-size-adjust:100%;
+}
+
+body{
+  font-family:'IBM Plex Sans Arabic',system-ui,-apple-system,'Segoe UI',sans-serif;
+  font-size:16px;
+  line-height:1.7;
+  color:var(--ink);
+  background:var(--paper);
+  overflow-x:hidden;
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+body::before{
+  content:"";
+  position:fixed;
+  inset:0;
+  z-index:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(17,22,27,.028) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(17,22,27,.028) 1px, transparent 1px);
+  background-size:72px 72px;
+  -webkit-mask-image:radial-gradient(120% 65% at 50% 0%, #000 0%, transparent 72%);
+  mask-image:radial-gradient(120% 65% at 50% 0%, #000 0%, transparent 72%);
+}
+
+img{max-width:100%;display:block}
+a{color:inherit}
+::selection{background:var(--ink);color:var(--paper)}
+
+:focus-visible{
+  outline:2px solid var(--accent);
+  outline-offset:3px;
+  border-radius:2px;
+}
+
+.container{
+  width:100%;
+  max-width:var(--container);
+  margin-inline:auto;
+  padding-inline:1.75rem;
+  position:relative;
+  z-index:1;
+}
+
+/* ============ TYPE ============ */
+h1,h2,h3{line-height:1.25;letter-spacing:normal}
+.serif{font-family:'Amiri',Georgia,serif}
+
+.kicker{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  font-size:.7rem;
+  font-weight:600;
+  letter-spacing:.22em;
+  text-transform:uppercase;
+  color:var(--accent);
+}
+.kicker::before{
+  content:"";
+  width:26px;
+  height:1px;
+  background:var(--accent);
+  opacity:.6;
+}
+
+.section-head{max-width:660px;margin-bottom:3.5rem}
+.section-head h2{
+  font-family:'Amiri',Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.85rem,3.4vw,2.6rem);
+  margin:1rem 0 1.1rem;
+}
+.section-head p{
+  color:var(--muted);
+  font-size:1.02rem;
+  max-width:560px;
+}
+
+/* ============ REVEAL ============ */
+.reveal{
+  opacity:0;
+  transform:translateY(26px);
+  transition:opacity .8s var(--ease), transform .8s var(--ease);
+  will-change:opacity, transform;
+}
+.reveal.is-visible{opacity:1;transform:none}
+
+/* ============ HEADER ============ */
+.header{
+  position:fixed;
+  inset:0 0 auto 0;
+  z-index:900;
+  background:rgba(250,248,245,.82);
+  -webkit-backdrop-filter:saturate(180%) blur(14px);
+  backdrop-filter:saturate(180%) blur(14px);
+  border-bottom:1px solid transparent;
+  transition:border-color .3s ease, background .3s ease, box-shadow .3s ease;
+}
+.header.is-scrolled{
+  border-bottom-color:var(--line);
+  background:rgba(250,248,245,.95);
+  box-shadow:0 1px 20px rgba(17,22,27,.04);
+}
+.header-inner{
+  height:76px;
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:2rem;
+}
+
+.brand{
+  display:inline-flex;
+  align-items:center;
+  gap:.85rem;
+  text-decoration:none;
+  flex-shrink:0;
+}
+.brand-mark{
+  width:38px;height:38px;
+  display:grid;place-items:center;
+  border:1px solid var(--ink);
+  border-radius:4px;
+  font-family:'Amiri',Georgia,serif;
+  font-size:.9rem;
+  font-weight:700;
+  letter-spacing:.02em;
+  color:var(--ink);
+  transition:background .3s var(--ease), color .3s var(--ease), border-color .3s var(--ease);
+}
+.brand:hover .brand-mark{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+.brand-text{display:flex;flex-direction:column;line-height:1.2}
+.brand-text strong{
+  font-size:.94rem;
+  font-weight:600;
+  letter-spacing:normal;
+}
+.brand-text em{
+  font-style:normal;
+  font-size:.66rem;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--muted);
+  margin-top:3px;
+}
+
+.nav{display:flex;align-items:center;gap:2.4rem}
+.nav a{
+  position:relative;
+  text-decoration:none;
+  font-size:.76rem;
+  font-weight:500;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--muted);
+  padding:.35rem 0;
+  transition:color .3s var(--ease);
+}
+.nav a::after{
+  content:"";
+  position:absolute;
+  left:0;bottom:0;
+  width:100%;height:1px;
+  background:var(--accent);
+  transform:scaleX(0);
+  transform-origin:left;
+  transition:transform .35s var(--ease);
+}
+.nav a:hover{color:var(--ink)}
+.nav a:hover::after,
+.nav a.active::after{transform:scaleX(1)}
+.nav a.active{color:var(--ink)}
+
+.header-actions{display:flex;align-items:center;gap:.9rem}
+
+.lang{
+  display:inline-flex;
+  align-items:center;
+  gap:.45rem;
+  height:38px;
+  padding:0 1rem;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  background:transparent;
+  color:var(--ink-2);
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:normal;
+  text-transform:none;
+  text-decoration:none;
+  transition:all .3s var(--ease);
+}
+.lang:hover{
+  background:var(--ink);
+  border-color:var(--ink);
+  color:var(--paper);
+}
+
+.menu-btn{
+  display:none;
+  width:40px;height:38px;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  background:transparent;
+  cursor:pointer;
+  padding:0;
+  place-items:center;
+  transition:all .3s var(--ease);
+}
+.menu-btn span{
+  display:block;
+  width:17px;height:1.5px;
+  background:var(--ink);
+  margin:3.5px auto;
+  transition:transform .3s var(--ease), opacity .25s ease;
+}
+.menu-btn:hover{border-color:var(--ink)}
+.menu-btn.is-open span:nth-child(1){transform:translateY(5px) rotate(45deg)}
+.menu-btn.is-open span:nth-child(2){transform:translateY(-5px) rotate(-45deg)}
+
+@media (max-width:900px){
+  .nav{display:none}
+  .menu-btn{display:grid}
+}
+
+/* ============ DRAWER ============ */
+.drawer-overlay{
+  position:fixed;inset:0;
+  background:rgba(17,22,27,.45);
+  -webkit-backdrop-filter:blur(4px);
+  backdrop-filter:blur(4px);
+  opacity:0;pointer-events:none;
+  transition:opacity .35s var(--ease);
+  z-index:940;
+}
+.drawer-overlay.is-open{opacity:1;pointer-events:auto}
+
+.drawer{
+  position:fixed;
+  top:0;left:0;
+  height:100dvh;
+  width:min(340px,86vw);
+  background:var(--paper);
+  border-right:1px solid var(--line);
+  transform:translateX(-100%);
+  transition:transform .45s var(--ease);
+  z-index:950;
+  display:flex;
+  flex-direction:column;
+  padding:1.6rem 1.9rem 2rem;
+  overflow-y:auto;
+}
+.drawer.is-open{transform:none}
+
+.drawer-top{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  padding-bottom:1.6rem;
+  border-bottom:1px solid var(--line);
+}
+.drawer-top span{
+  font-size:.68rem;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--muted);
+}
+.drawer-close{
+  width:36px;height:36px;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  background:transparent;
+  color:var(--ink);
+  font-size:.95rem;
+  cursor:pointer;
+  display:grid;place-items:center;
+  transition:all .3s var(--ease);
+}
+.drawer-close:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+.drawer-nav{list-style:none;margin-top:1.4rem;display:flex;flex-direction:column}
+.drawer-nav a{
+  display:flex;
+  align-items:baseline;
+  gap:1rem;
+  padding:1.05rem .2rem;
+  text-decoration:none;
+  border-bottom:1px solid var(--line);
+  font-family:'Amiri',Georgia,serif;
+  font-size:1.25rem;
+  color:var(--ink);
+  transition:color .3s var(--ease), padding-right .3s var(--ease);
+}
+.drawer-nav a i{
+  font-family:'IBM Plex Sans Arabic',sans-serif;
+  font-size:.66rem;
+  font-weight:600;
+  letter-spacing:normal;
+  color:var(--accent);
+  font-style:normal;
+}
+.drawer-nav a:hover{color:var(--accent);padding-right:.6rem}
+
+.drawer-foot{margin-top:auto;padding-top:2rem}
+.drawer-foot p{
+  font-size:.7rem;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--muted);
+  margin-bottom:.9rem;
+}
+.drawer-social{display:flex;gap:.6rem}
+.drawer-social a{
+  width:40px;height:40px;
+  display:grid;place-items:center;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  color:var(--ink-2);
+  text-decoration:none;
+  font-size:.95rem;
+  transition:all .3s var(--ease);
+}
+.drawer-social a:hover{background:var(--ink);color:var(--paper);border-color:var(--ink)}
+
+/* ============ HERO ============ */
+.hero{
+  min-height:100svh;
+  display:flex;
+  align-items:center;
+  padding:9rem 0 5rem;
+  border-bottom:1px solid var(--line);
+  position:relative;
+}
+.hero-grid{
+  display:grid;
+  grid-template-columns:1.05fr .95fr;
+  gap:clamp(2.5rem,6vw,5.5rem);
+  align-items:center;
+  width:100%;
+}
+
+.status{
+  display:inline-flex;
+  align-items:center;
+  gap:.6rem;
+  padding:.42rem .95rem .42rem .8rem;
+  border:1px solid var(--line-2);
+  border-radius:100px;
+  background:rgba(255,255,255,.7);
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--ink-2);
+  margin-bottom:1.9rem;
+}
+.status .dot{
+  width:6px;height:6px;
+  border-radius:50%;
+  background:#2E9E5B;
+  box-shadow:0 0 0 0 rgba(46,158,91,.45);
+  animation:ping 2.4s infinite;
+}
+@keyframes ping{
+  0%{box-shadow:0 0 0 0 rgba(46,158,91,.45)}
+  70%{box-shadow:0 0 0 9px rgba(46,158,91,0)}
+  100%{box-shadow:0 0 0 0 rgba(46,158,91,0)}
+}
+
+.hero h1{
+  font-family:'Amiri',Georgia,serif;
+  font-weight:700;
+  font-size:clamp(2.5rem,6.2vw,4.35rem);
+  line-height:1.1;
+  letter-spacing:normal;
+  margin-bottom:1.6rem;
+}
+.hero h1 em{
+  font-style:normal;
+  color:var(--accent);
+}
+.hero .lead{
+  font-size:clamp(1rem,1.6vw,1.1rem);
+  color:var(--muted);
+  max-width:520px;
+  margin-bottom:2.4rem;
+}
+.hero .lead strong{color:var(--ink);font-weight:600}
+
+.hero-actions{display:flex;flex-wrap:wrap;gap:.9rem;margin-bottom:2.8rem}
+
+.btn{
+  display:inline-flex;
+  align-items:center;
+  gap:.65rem;
+  padding:.95rem 1.7rem;
+  border-radius:4px;
+  border:1px solid transparent;
+  font-size:.76rem;
+  font-weight:600;
+  letter-spacing:normal;
+  text-transform:none;
+  text-decoration:none;
+  cursor:pointer;
+  transition:all .3s var(--ease);
+}
+.btn i{font-size:.8rem;transition:transform .3s var(--ease)}
+.btn-solid{background:var(--ink);color:var(--paper)}
+.btn-solid:hover{background:var(--accent);transform:translateY(-2px)}
+.btn-solid:hover i{transform:translateX(4px)}
+.btn-line{border-color:var(--line-2);color:var(--ink);background:transparent}
+.btn-line:hover{border-color:var(--ink);background:var(--ink);color:var(--paper);transform:translateY(-2px)}
+
+.hero-facts{
+  display:flex;
+  flex-wrap:wrap;
+  gap:2.5rem;
+  padding-top:2rem;
+  border-top:1px solid var(--line);
+}
+.fact strong{
+  display:block;
+  font-family:'Amiri',Georgia,serif;
+  font-size:1.55rem;
+  font-weight:700;
+  line-height:1.2;
+}
+.fact span{
+  font-size:.7rem;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--muted);
+}
+
+/* code panel */
+.panel{
+  background:var(--dark);
+  border-radius:8px;
+  border:1px solid rgba(255,255,255,.07);
+  box-shadow:var(--shadow-md);
+  overflow:hidden;
+}
+.panel-bar{
+  display:flex;
+  align-items:center;
+  gap:.45rem;
+  padding:.85rem 1.1rem;
+  border-bottom:1px solid rgba(255,255,255,.07);
+  background:rgba(255,255,255,.02);
+}
+.panel-bar i{
+  width:9px;height:9px;
+  border-radius:50%;
+  background:rgba(255,255,255,.16);
+  display:block;
+}
+.panel-bar em{
+  margin-right:auto;
+  margin-left:0;
+  font-style:normal;
+  font-size:.68rem;
+  letter-spacing:normal;
+  text-transform:none;
+  color:rgba(255,255,255,.42);
+}
+.panel pre{
+  margin:0;
+  padding:1.6rem 1.5rem 1.8rem;
+  font-family:ui-monospace,'SFMono-Regular','Fira Code',Menlo,Consolas,monospace;
+  font-size:.82rem;
+  line-height:1.95;
+  color:#DED8D0;
+  overflow-x:auto;
+  direction:ltr;
+  text-align:left;
+}
+.panel .c{color:#6C7B87}
+.panel .k{color:#D9A96B}
+.panel .v{color:#EDE7DF}
+.panel .p{color:#9CB6C7}
+.panel .s{color:#A6C297}
+
+.panel-note{
+  display:flex;
+  align-items:center;
+  gap:.6rem;
+  margin-top:1.1rem;
+  font-size:.74rem;
+  letter-spacing:normal;
+  color:var(--muted);
+}
+.panel-note i{color:var(--accent)}
+
+@media (max-width:960px){
+  .hero{padding:7.5rem 0 4rem;min-height:auto}
+  .hero-grid{grid-template-columns:1fr;gap:3rem}
+  .hero .lead{max-width:100%}
+  .panel{max-width:520px}
+}
+
+/* ============ SECTIONS ============ */
+.section{padding:6.5rem 0;position:relative}
+.section.alt{
+  background:var(--paper-2);
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+
+/* ============ ABOUT ============ */
+.about-grid{
+  display:grid;
+  grid-template-columns:.82fr 1.18fr;
+  gap:clamp(2.5rem,5vw,4.5rem);
+  align-items:start;
+}
+.portrait{
+  position:relative;
+  border-radius:var(--radius);
+  overflow:hidden;
+  border:1px solid var(--line);
+  background:var(--paper-2);
+  aspect-ratio:4/5;
+  box-shadow:var(--shadow-sm);
+}
+.portrait img{
+  width:100%;height:100%;
+  object-fit:cover;
+  transition:transform 1s var(--ease);
+}
+.portrait:hover img{transform:scale(1.03)}
+.portrait .fallback{
+  position:absolute;inset:0;
+  display:grid;place-items:center;
+  font-family:'Amiri',Georgia,serif;
+  font-size:4rem;
+  color:var(--accent);
+  opacity:.55;
+  z-index:-1;
+}
+.portrait-caption{
+  margin-top:1.1rem;
+  font-size:.72rem;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--muted);
+}
+
+.about-body h3{
+  font-family:'Amiri',Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.4rem,2.4vw,1.85rem);
+  margin-bottom:1.1rem;
+}
+.about-body h3 em{font-style:normal;color:var(--accent)}
+.about-body p{color:var(--muted);margin-bottom:1.1rem}
+.about-body p strong{color:var(--ink);font-weight:600}
+
+.principles{
+  list-style:none;
+  display:grid;
+  grid-template-columns:repeat(2,minmax(0,1fr));
+  gap:.75rem 1.5rem;
+  margin:1.9rem 0 0;
+  padding-top:1.9rem;
+  border-top:1px solid var(--line);
+}
+.principles li{
+  display:flex;
+  align-items:flex-start;
+  gap:.7rem;
+  font-size:.9rem;
+  color:var(--ink-2);
+}
+.principles li i{
+  color:var(--accent);
+  font-size:.72rem;
+  margin-top:.42rem;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns:repeat(4,1fr);
+  margin-top:4.5rem;
+  border-top:1px solid var(--line);
+  border-bottom:1px solid var(--line);
+}
+.stat{
+  padding:2rem 1.6rem;
+  border-right:1px solid var(--line);
+}
+.stat:first-child{border-right:none;padding-right:0}
+.stat strong{
+  display:block;
+  font-family:'Amiri',Georgia,serif;
+  font-size:2.1rem;
+  font-weight:700;
+  line-height:1;
+  margin-bottom:.5rem;
+}
+.stat span{
+  font-size:.7rem;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--muted);
+  line-height:1.5;
+  display:block;
+}
+
+@media (max-width:960px){
+  .about-grid{grid-template-columns:1fr}
+  .portrait{max-width:340px}
+  .stats{grid-template-columns:repeat(2,1fr);margin-top:3rem}
+  .stat{padding:1.6rem 1.2rem}
+  .stat:nth-child(odd){border-right:none;padding-right:0}
+  .stat:nth-child(n+3){border-top:1px solid var(--line)}
+}
+@media (max-width:520px){
+  .principles{grid-template-columns:1fr}
+}
+
+/* ============ SERVICES ============ */
+.services{
+  display:grid;
+  grid-template-columns:repeat(3,1fr);
+  gap:1.4rem;
+}
+.service{
+  background:var(--white);
+  border:1px solid var(--line);
+  border-radius:var(--radius);
+  padding:2.3rem 2rem 2.1rem;
+  display:flex;
+  flex-direction:column;
+  text-align:right;
+  transition:border-color .35s var(--ease), transform .35s var(--ease), box-shadow .35s var(--ease);
+}
+.service:hover{
+  border-color:var(--line-2);
+  transform:translateY(-5px);
+  box-shadow:var(--shadow-sm);
+}
+.service .num{
+  font-size:.68rem;
+  font-weight:600;
+  letter-spacing:normal;
+  color:var(--accent);
+  margin-bottom:1.6rem;
+}
+.service .ic{
+  width:44px;height:44px;
+  display:grid;place-items:center;
+  border:1px solid var(--line);
+  border-radius:4px;
+  color:var(--accent);
+  font-size:1.05rem;
+  margin-bottom:1.5rem;
+  transition:all .35s var(--ease);
+}
+.service:hover .ic{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.service h3{
+  font-size:1.1rem;
+  font-weight:600;
+  letter-spacing:normal;
+  margin-bottom:.85rem;
+}
+.service p{
+  font-size:.92rem;
+  color:var(--muted);
+  margin-bottom:1.7rem;
+  flex-grow:1;
+}
+
+.chips{
+  display:flex;
+  flex-wrap:wrap;
+  gap:.45rem;
+  list-style:none;
+  justify-content:flex-start;
+}
+.chips li{
+  font-size:.66rem;
+  font-weight:600;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--muted);
+  border:1px solid var(--line);
+  border-radius:3px;
+  padding:.34rem .62rem;
+  background:var(--paper);
+  transition:all .3s var(--ease);
+}
+.service:hover .chips li{border-color:var(--line-2);color:var(--ink-2)}
+
+@media (max-width:900px){
+  .services{grid-template-columns:1fr;gap:1rem}
+  .service{padding:2rem 1.6rem}
+}
+
+/* ============ PROJECTS ============ */
+.projects{
+  border-top:1px solid var(--line);
+}
+.project{
+  display:grid;
+  grid-template-columns:auto 1fr auto;
+  gap:clamp(1.2rem,3vw,2.6rem);
+  align-items:center;
+  padding:2.4rem .5rem;
+  border-bottom:1px solid var(--line);
+  text-decoration:none;
+  position:relative;
+  transition:background .4s var(--ease), padding-right .4s var(--ease);
+}
+.project::before{
+  content:"";
+  position:absolute;
+  right:0;top:0;bottom:0;
+  width:2px;
+  background:var(--accent);
+  transform:scaleY(0);
+  transform-origin:center;
+  transition:transform .4s var(--ease);
+}
+.project:hover{background:rgba(255,255,255,.6);padding-right:1.4rem}
+.project:hover::before{transform:scaleY(1)}
+
+.project-idx{
+  font-size:.72rem;
+  font-weight:600;
+  letter-spacing:normal;
+  color:var(--accent);
+  align-self:flex-start;
+  padding-top:.35rem;
+  min-width:26px;
+}
+.project-main h3{
+  font-family:'Amiri',Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.15rem,2.1vw,1.5rem);
+  margin-bottom:.6rem;
+  display:flex;
+  align-items:center;
+  gap:.7rem;
+  transition:color .3s var(--ease);
+}
+.project-main h3 i{
+  font-size:.68rem;
+  color:var(--muted);
+  opacity:0;
+  transform:translate(4px,-4px);
+  transition:all .35s var(--ease);
+}
+.project:hover .project-main h3{color:var(--accent-2)}
+.project:hover .project-main h3 i{opacity:1;transform:none;color:var(--accent)}
+.project-main p{
+  font-size:.94rem;
+  color:var(--muted);
+  max-width:620px;
+  margin-bottom:1.1rem;
+}
+.project-cta{
+  display:inline-flex;
+  align-items:center;
+  gap:.55rem;
+  font-size:.7rem;
+  font-weight:600;
+  letter-spacing:normal;
+  text-transform:none;
+  color:var(--ink);
+  white-space:nowrap;
+  padding:.8rem 1.2rem;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  transition:all .35s var(--ease);
+}
+.project-cta i{transition:transform .35s var(--ease)}
+.project:hover .project-cta{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+.project:hover .project-cta i{transform:translateX(-4px)}
+
+@media (max-width:820px){
+  .project{grid-template-columns:1fr;gap:1.2rem;padding:2rem 0}
+  .project-idx{padding-top:0}
+  .project-cta{justify-self:start}
+  .project:hover{padding-right:0}
+  .project:hover::before{transform:scaleY(1)}
+}
+
+/* ============ CONTACT ============ */
+.contact{
+  background:var(--dark);
+  color:#E8E3DC;
+  padding:6.5rem 0 0;
+  position:relative;
+}
+.contact::before{
+  content:"";
+  position:absolute;
+  inset:0;
+  pointer-events:none;
+  background-image:
+    linear-gradient(rgba(255,255,255,.022) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255,255,255,.022) 1px, transparent 1px);
+  background-size:72px 72px;
+}
+.contact .container{position:relative;z-index:1}
+
+.contact-grid{
+  display:grid;
+  grid-template-columns:1.15fr .85fr;
+  gap:clamp(2.5rem,6vw,5rem);
+  padding-bottom:5rem;
+}
+.contact .kicker{color:#C9A87C}
+.contact .kicker::before{background:#C9A87C}
+.contact h2{
+  font-family:'Amiri',Georgia,serif;
+  font-weight:700;
+  font-size:clamp(1.9rem,3.6vw,2.7rem);
+  color:#FFFFFF;
+  margin:1rem 0 1.2rem;
+}
+.contact h2 em{font-style:normal;color:#C9A87C}
+.contact-lead{
+  color:rgba(232,227,220,.68);
+  max-width:480px;
+  margin-bottom:2.3rem;
+}
+
+.btn-light{background:#F4F1EC;color:var(--dark);border-color:#F4F1EC}
+.btn-light:hover{background:#C9A87C;border-color:#C9A87C;color:var(--dark);transform:translateY(-2px)}
+.btn-outline-light{border-color:rgba(255,255,255,.25);color:#E8E3DC;background:transparent}
+.btn-outline-light:hover{border-color:#E8E3DC;background:rgba(255,255,255,.07);transform:translateY(-2px)}
+
+.contact-list{list-style:none;border-top:1px solid var(--dark-line)}
+.contact-list li{
+  display:grid;
+  grid-template-columns:110px 1fr;
+  gap:1rem;
+  padding:1.15rem 0;
+  border-bottom:1px solid var(--dark-line);
+  align-items:baseline;
+}
+.contact-list .label{
+  font-size:.66rem;
+  font-weight:600;
+  letter-spacing:normal;
+  text-transform:none;
+  color:rgba(232,227,220,.45);
+  text-align:right;
+}
+.contact-list a,
+.contact-list span.value{
+  color:#E8E3DC;
+  text-decoration:none;
+  font-size:.94rem;
+  transition:color .3s var(--ease);
+  word-break:break-word;
+}
+.contact-list a:hover{color:#C9A87C}
+
+.contact-social{
+  display:flex;
+  gap:.6rem;
+  flex-wrap:wrap;
+}
+.contact-social a{
+  width:40px;height:40px;
+  display:grid;place-items:center;
+  border:1px solid rgba(255,255,255,.18);
+  border-radius:4px;
+  color:#E8E3DC;
+  text-decoration:none;
+  font-size:.95rem;
+  transition:all .3s var(--ease);
+}
+.contact-social a:hover{background:#C9A87C;border-color:#C9A87C;color:var(--dark);transform:translateY(-3px)}
+
+/* footer */
+.footer{
+  background:var(--dark);
+  border-top:1px solid var(--dark-line);
+  padding:2.2rem 0;
+}
+.footer-inner{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+  gap:1.2rem;
+  flex-wrap:wrap;
+}
+.footer-brand{
+  display:inline-flex;
+  align-items:center;
+  gap:.75rem;
+  text-decoration:none;
+  color:#E8E3DC;
+}
+.footer-brand .brand-mark{
+  border-color:rgba(255,255,255,.3);
+  color:#E8E3DC;
+}
+.footer-brand:hover .brand-mark{background:#E8E3DC;color:var(--dark);border-color:#E8E3DC}
+.footer-brand strong{font-size:.88rem;font-weight:600;letter-spacing:normal}
+.footer-meta{
+  display:flex;
+  align-items:center;
+  gap:1.6rem;
+  flex-wrap:wrap;
+  font-size:.76rem;
+  color:rgba(232,227,220,.5);
+}
+.footer-meta a{
+  color:rgba(232,227,220,.65);
+  text-decoration:none;
+  transition:color .3s var(--ease);
+}
+.footer-meta a:hover{color:#C9A87C}
+
+@media (max-width:900px){
+  .contact-grid{grid-template-columns:1fr;padding-bottom:4rem}
+  .contact-list li{grid-template-columns:1fr;gap:.35rem}
+  .footer-inner{flex-direction:column;text-align:center}
+  .footer-meta{justify-content:center}
+}
+
+/* ============ TO TOP ============ */
+.to-top{
+  position:fixed;
+  left:24px;bottom:24px;
+  width:46px;height:46px;
+  display:grid;place-items:center;
+  border:1px solid var(--line-2);
+  border-radius:4px;
+  background:var(--paper);
+  color:var(--ink);
+  font-size:.85rem;
+  cursor:pointer;
+  z-index:800;
+  opacity:0;
+  pointer-events:none;
+  transform:translateY(10px);
+  transition:all .4s var(--ease);
+  box-shadow:var(--shadow-sm);
+}
+.to-top.is-visible{opacity:1;pointer-events:auto;transform:none}
+.to-top:hover{background:var(--ink);border-color:var(--ink);color:var(--paper)}
+
+@media (max-width:520px){
+  .container{padding-inline:1.25rem}
+  .section{padding:5rem 0}
+  .hero-facts{gap:1.8rem}
+  .to-top{left:16px;bottom:16px}
+}
+
+/* ============ MOTION ============ */
+@media (prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  *,*::before,*::after{animation-duration:.001ms !important;transition-duration:.001ms !important}
+  .reveal{opacity:1;transform:none}
+}
+
+/* ============ RTL OVERRIDES ============ */
+[dir="rtl"] {
+  text-align: right;
+}
+
+[dir="rtl"] .kicker {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .kicker::before {
+  margin-left: 0.6rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .status {
+  flex-direction: row-reverse;
+}
+[dir="rtl"] .status .dot {
+  margin-left: 0.6rem;
+  margin-right: 0;
+}
+
+[dir="rtl"] .section-head {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-content,
+[dir="rtl"] .about-body,
+[dir="rtl"] .contact-info {
+  text-align: right;
+}
+
+[dir="rtl"] .hero-actions {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .hero-facts {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .principles li {
+  text-align: right;
+}
+
+[dir="rtl"] .stat {
+  text-align: right;
+}
+
+[dir="rtl"] .service {
+  text-align: right;
+}
+
+[dir="rtl"] .chips {
+  justify-content: flex-start;
+}
+
+[dir="rtl"] .project-main {
+  text-align: right;
+}
+
+[dir="rtl"] .contact-list li {
+  grid-template-columns: 110px 1fr;
+}
+
+[dir="rtl"] .contact-list .label {
+  text-align: right;
+}
+
+[dir="rtl"] .to-top {
+  left: 24px;
+  right: auto;
+}
+
+[dir="rtl"] .drawer {
+  right: auto;
+  left: 0;
+  transform: translateX(-100%);
+  border-left: none;
+  border-right: 1px solid var(--line);
+}
+[dir="rtl"] .drawer.is-open {
+  transform: none;
+}
+
+[dir="rtl"] .drawer-nav a {
+  text-align: right;
+}
+
+[dir="rtl"] .brand-text em {
+  letter-spacing: normal;
+}
+
+[dir="rtl"] .nav a,
+[dir="rtl"] .kicker,
+[dir="rtl"] .status,
+[dir="rtl"] .btn,
+[dir="rtl"] .chips li,
+[dir="rtl"] .project-cta,
+[dir="rtl"] .stat span,
+[dir="rtl"] .footer-meta,
+[dir="rtl"] .contact-list .label,
+[dir="rtl"] .drawer-top span,
+[dir="rtl"] .drawer-foot p {
+  letter-spacing: normal;
+  text-transform: none;
+}
+
+[dir="rtl"] .panel pre {
+  direction: ltr;
+  text-align: left;
+}
+
+[dir="rtl"] .section-head p {
+  text-align: right;
+}
+
+[dir="rtl"] .contact-lead {
+  text-align: right;
+}
+
+[dir="rtl"] .section-head {
+  margin-left: 0;
+  margin-right: 0;
+}
+</style>
+</head>
+<body>
+
+<!-- ============ DRAWER ============ -->
+<div class="drawer-overlay" id="drawerOverlay" hidden></div>
+<aside class="drawer" id="drawer" aria-label="قائمة التنقل" aria-hidden="true">
+  <div class="drawer-top">
+    <span>التنقل</span>
+    <button class="drawer-close" id="drawerClose" aria-label="إغلاق القائمة">
+      <i class="fas fa-xmark"></i>
+    </button>
+  </div>
+  <ul class="drawer-nav">
+    <li><a href="#home"><i>01</i> الرئيسية</a></li>
+    <li><a href="#about"><i>02</i> نبذة</a></li>
+    <li><a href="#services"><i>03</i> الخبرات</a></li>
+    <li><a href="#projects"><i>04</i> أعمالي</a></li>
+    <li><a href="#contact"><i>05</i> اتصل بي</a></li>
+  </ul>
+  <div class="drawer-foot">
+    <p>تواصل معي</p>
+    <div class="drawer-social">
+      <a href="https://github.com/raefjarjar218" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+      <a href="https://www.linkedin.com/in/raef-jarjar-a04856408" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+      <a href="mailto:contact@raefjarjar.com.ly" aria-label="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+    </div>
+  </div>
+</aside>
+
+<!-- ============ HEADER ============ -->
+<header class="header" id="header">
+  <div class="container header-inner">
+    <a href="#home" class="brand" aria-label="رائف جرجر — الرئيسية">
+      <span class="brand-mark">RJ</span>
+      <span class="brand-text">
+        <strong>رائف جرجر</strong>
+        <em>مطوّر ويب متكامل</em>
+      </span>
+    </a>
+
+    <nav class="nav" aria-label="التنقل الرئيسي">
+      <a href="#about">نبذة</a>
+      <a href="#services">الخبرات</a>
+      <a href="#projects">أعمالي</a>
+      <a href="#contact">اتصل بي</a>
+    </nav>
+
+    <div class="header-actions">
+      <a class="lang" href="index.html" hreflang="en" title="English version">
+        <i class="fas fa-globe"></i> EN
+      </a>
+      <button class="menu-btn" id="menuBtn" aria-label="فتح القائمة" aria-expanded="false" aria-controls="drawer">
+        <span></span><span></span>
+      </button>
+    </div>
+  </div>
+</header>
+
+<main>
+  <!-- ============ HERO ============ -->
+  <section class="hero" id="home">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="reveal">
+          <span class="status"><span class="dot"></span> متاح لمشاريع جديدة</span>
+
+          <h1>مطوّر ويب<br><em>متكامل</em></h1>
+
+          <p class="lead">
+            أصمم وأبني تطبيقات ويب احترافية باستخدام
+            <strong>PHP و Laravel و MySQL</strong> في الواجهة الخلفية،
+            و<strong>HTML و CSS و JavaScript</strong> في الواجهة الأمامية —
+            من هندسة قواعد البيانات إلى آخر بكسل في الواجهة.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projects" class="btn btn-solid">استعرض أعمالي <i class="fas fa-arrow-left"></i></a>
+            <a href="#contact" class="btn btn-line">لنتحدث</a>
+          </div>
+
+          <div class="hero-facts">
+            <div class="fact">
+              <strong>3+</strong>
+              <span>مشاريع منجزة</span>
+            </div>
+            <div class="fact">
+              <strong>6</strong>
+              <span>تقنيات أساسية</span>
+            </div>
+            <div class="fact">
+              <strong>ليبيا</strong>
+              <span>متاح عن بُعد عالميًا</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="reveal" data-delay="150">
+          <div class="panel" dir="ltr">
+            <div class="panel-bar">
+              <i></i><i></i><i></i>
+              <em>developer.js</em>
+            </div>
+<pre><code><span class="c">// profile — 2026</span>
+<span class="k">const</span> <span class="v">developer</span> = {
+  <span class="p">name</span>:    <span class="s">'Raef Jarjar'</span>,
+  <span class="p">role</span>:    <span class="s">'Full-stack Developer'</span>,
+  <span class="p">backend</span>: [<span class="s">'PHP'</span>, <span class="s">'Laravel'</span>, <span class="s">'MySQL'</span>],
+  <span class="p">frontend</span>:[<span class="s">'HTML'</span>, <span class="s">'CSS'</span>, <span class="s">'JavaScript'</span>],
+  <span class="p">values</span>:  [<span class="s">'clarity'</span>, <span class="s">'performance'</span>],
+  <span class="p">status</span>:  <span class="k">'available'</span>
+};</code></pre>
+          </div>
+          <p class="panel-note">
+            <i class="fas fa-circle-check"></i>
+            كود نظيف · هيكلة واضحة · تسليم في الوقت المحدد
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ ABOUT ============ -->
+  <section class="section" id="about">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">01 — نبذة</span>
+        <h2>هندسة برمجيات تركز على الوضوح والموثوقية والقيمة طويلة المدى.</h2>
+        <p>أساعد الشركات على تحويل المتطلبات إلى منتجات رقمية مستقرة ومبنية بشكل جيد — مصممة للاستمرار، وليس فقط للإطلاق.</p>
+      </div>
+
+      <div class="about-grid">
+        <div class="reveal">
+          <div class="portrait">
+            <span class="fallback">RJ</span>
+            <img src="file_00000000dc7471f48b5f52386b92cfcb.png"
+                 alt="رائف جرجر — مطوّر ويب متكامل"
+                 onerror="this.style.display='none';this.previousElementSibling.style.zIndex='1';">
+          </div>
+          <p class="portrait-caption">رائف جرجر · ليبيا</p>
+        </div>
+
+        <div class="about-body reveal" data-delay="120">
+          <h3>مرحبًا — أنا <em>رائف جرجر</em>، مطوّر ويب متكامل.</h3>
+          <p>
+            أبني تطبيقات ويب حديثة وعالية الأداء مع تركيز قوي على
+            <strong>الكود النظيف</strong>، والهندسة السليمة، والأداء القابل للقياس.
+            مجموعتي اليومية هي <strong>PHP و Laravel</strong> في الخادم،
+            و<strong>MySQL</strong> للبيانات، و<strong>HTML و CSS و JavaScript</strong>
+            لواجهات سريعة ومدروسة.
+          </p>
+          <p>
+            أعمل عن كثب مع العملاء لترجمة احتياجات العمل إلى قرارات تقنية دقيقة —
+            ثم أقوم بالتسليم والتوثيق والدعم.
+          </p>
+
+          <ul class="principles">
+            <li><i class="fas fa-check"></i> كود نظيف وقابل للقراءة وموثّق</li>
+            <li><i class="fas fa-check"></i> تصميمات متجاوبة وسهلة الوصول</li>
+            <li><i class="fas fa-check"></i> تحسين الأداء ووقت التحميل</li>
+            <li><i class="fas fa-check"></i> ترميز دلالي صديق لمحركات البحث</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="stats reveal">
+        <div class="stat">
+          <strong>3+</strong>
+          <span>مشاريع رئيسية منجزة</span>
+        </div>
+        <div class="stat">
+          <strong>6</strong>
+          <span>تقنيات أساسية</span>
+        </div>
+        <div class="stat">
+          <strong>100%</strong>
+          <span>رضا العملاء</span>
+        </div>
+        <div class="stat">
+          <strong>24/7</strong>
+          <span>تواصل ودعم</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ EXPERTISE ============ -->
+  <section class="section alt" id="services">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">02 — الخبرات</span>
+        <h2>التقنيات والتخصصات التي أعمل بها.</h2>
+        <p>مجموعة تقنيات مركزة، تُطبَّق من البداية إلى النهاية — من نمذجة البيانات إلى الواجهة النهائية.</p>
+      </div>
+
+      <div class="services">
+        <article class="service reveal">
+          <span class="num">01</span>
+          <div class="ic"><i class="fas fa-code"></i></div>
+          <h3>تطوير الواجهة الأمامية</h3>
+          <p>واجهات متجاوبة ودقيقة مبنية بـ HTML5 الدلالي و CSS3 الحديث و JavaScript الصافي — سريعة، سهلة الوصول، ومتسقة عبر الأجهزة.</p>
+          <ul class="chips">
+            <li>HTML5</li>
+            <li>CSS3</li>
+            <li>JavaScript</li>
+            <li>تجاوب</li>
+          </ul>
+        </article>
+
+        <article class="service reveal" data-delay="120">
+          <span class="num">02</span>
+          <div class="ic"><i class="fas fa-server"></i></div>
+          <h3>تطوير الواجهة الخلفية</h3>
+          <p>تطبيقات خلفية قوية باستخدام PHP وإطار Laravel — واجهات RESTful API، مصادقة، تفويض، وهندسة تطبيقات قابلة للتوسع.</p>
+          <ul class="chips">
+            <li>PHP</li>
+            <li>Laravel</li>
+            <li>REST API</li>
+            <li>MVC</li>
+          </ul>
+        </article>
+
+        <article class="service reveal" data-delay="240">
+          <span class="num">03</span>
+          <div class="ic"><i class="fas fa-database"></i></div>
+          <h3>تصميم قواعد البيانات</h3>
+          <p>مخططات MySQL مُنظَّمة، فهرسة فعالة، وتحسين الاستعلامات — مع نماذج Eloquent ORM التي تحافظ على وصول نظيف ومتوقع للبيانات.</p>
+          <ul class="chips">
+            <li>MySQL</li>
+            <li>Eloquent</li>
+            <li>SQL</li>
+            <li>تحسين</li>
+          </ul>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ WORK ============ -->
+  <section class="section" id="projects">
+    <div class="container">
+      <div class="section-head reveal">
+        <span class="kicker">03 — أعمال مختارة</span>
+        <h2>مشاريع منجزة لشركات حقيقية.</h2>
+        <p>مواقع مؤسسية ومنصات رقمية، تم بناؤها وتسليمها لعملاء في جميع أنحاء ليبيا.</p>
+      </div>
+
+      <div class="projects">
+        <a class="project reveal" href="https://www.nloc.ly" target="_blank" rel="noopener">
+          <span class="project-idx">01</span>
+          <div class="project-main">
+            <h3>شركة نيو ليبيا للنفط <i class="fas fa-arrow-up-right-from-square"></i></h3>
+            <p>الموقع الرسمي لشركة نيو ليبيا لخدمات النفط — مبني بمعايير الويب الحديثة ومحسّن للأداء والوضوح.</p>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </div>
+          <span class="project-cta">زيارة الموقع <i class="fas fa-arrow-left"></i></span>
+        </a>
+
+        <a class="project reveal" data-delay="100" href="https://www.emaarpharma.ly/" target="_blank" rel="noopener">
+          <span class="project-idx">02</span>
+          <div class="project-main">
+            <h3>إعمار فارما <i class="fas fa-arrow-up-right-from-square"></i></h3>
+            <p>موقع احترافي لشركة إعمار فارما، إحدى الشركات الرائدة في استيراد الأدوية — هيكل واضح، عرض واضح للمنتجات، وهوية مؤسسية موثوقة.</p>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </div>
+          <span class="project-cta">زيارة الموقع <i class="fas fa-arrow-left"></i></span>
+        </a>
+
+        <a class="project reveal" data-delay="200" href="https://ataalfalah.ly/" target="_blank" rel="noopener">
+          <span class="project-idx">03</span>
+          <div class="project-main">
+            <h3>عطاء فلاح المتميز <i class="fas fa-arrow-up-right-from-square"></i></h3>
+            <p>موقع لشركة عطاء فلاح المتميز — يقدم الخدمات والخبرات الزراعية من خلال تجربة منظمة وسهلة التنقل.</p>
+            <ul class="chips">
+              <li>HTML</li><li>CSS</li><li>JavaScript</li>
+            </ul>
+          </div>
+          <span class="project-cta">زيارة الموقع <i class="fas fa-arrow-left"></i></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ============ CONTACT ============ -->
+  <section class="contact" id="contact">
+    <div class="container">
+      <div class="contact-grid">
+        <div class="reveal">
+          <span class="kicker">04 — اتصل بي</span>
+          <h2>لنبنِ شيئًا <em>موثوقًا</em>.</h2>
+          <p class="contact-lead">
+            متاح للعمل الحر والتعاون طويل الأمد.
+            أخبرني عن مشروعك وسأعود إليك بخطة واضحة.
+          </p>
+          <div class="hero-actions" style="margin-bottom:0">
+            <a href="mailto:contact@raefjarjar.com.ly" class="btn btn-light">
+              راسلني <i class="fas fa-arrow-left"></i>
+            </a>
+            <a href="https://www.linkedin.com/in/raef-jarjar-a04856408" target="_blank" rel="noopener" class="btn btn-outline-light">
+              LinkedIn
+            </a>
+          </div>
+        </div>
+
+        <div class="reveal" data-delay="140">
+          <ul class="contact-list">
+            <li>
+              <span class="label">البريد الإلكتروني</span>
+              <a href="mailto:contact@raefjarjar.com.ly">contact@raefjarjar.com.ly</a>
+            </li>
+            <li>
+              <span class="label">الموقع</span>
+              <span class="value">ليبيا — متاح عن بُعد عالميًا</span>
+            </li>
+            <li>
+              <span class="label">الموقع الإلكتروني</span>
+              <a href="https://raefjarjar.com.ly" target="_blank" rel="noopener">raefjarjar.com.ly</a>
+            </li>
+            <li>
+              <span class="label">التواصل الاجتماعي</span>
+              <div class="contact-social">
+                <a href="https://github.com/raefjarjar218" target="_blank" rel="noopener" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                <a href="https://www.linkedin.com/in/raef-jarjar-a04856408" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+                <a href="mailto:contact@raefjarjar.com.ly" aria-label="البريد الإلكتروني"><i class="fas fa-envelope"></i></a>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+      <div class="container footer-inner">
+        <a href="#home" class="footer-brand">
+          <span class="brand-mark">RJ</span>
+          <strong>رائف جرجر</strong>
+        </a>
+        <div class="footer-meta">
+          <span>© <span id="year">2026</span> رائف جرجر — جميع الحقوق محفوظة.</span>
+          <a href="privacy.html">سياسة الخصوصية</a>
+          <a href="index.html" hreflang="en">English</a>
+        </div>
+      </div>
+    </footer>
+  </section>
+</main>
+
+<button class="to-top" id="toTop" aria-label="العودة إلى الأعلى">
+  <i class="fas fa-arrow-up"></i>
+</button>
+
+<script>
+(function () {
+  'use strict';
+
+  /* ---------- Reveal on scroll ---------- */
+  var revealEls = document.querySelectorAll('.reveal');
+  if ('IntersectionObserver' in window) {
+    var revealObserver = new IntersectionObserver(function (entries, obs) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var delay = entry.target.getAttribute('data-delay');
+        if (delay) entry.target.style.transitionDelay = delay + 'ms';
+        entry.target.classList.add('is-visible');
+        obs.unobserve(entry.target);
+      });
+    }, { threshold: 0.12, rootMargin: '0px 0px -60px 0px' });
+
+    revealEls.forEach(function (el) { revealObserver.observe(el); });
+  } else {
+    revealEls.forEach(function (el) { el.classList.add('is-visible'); });
+  }
+
+  /* ---------- Header state + back to top ---------- */
+  var header = document.getElementById('header');
+  var toTop = document.getElementById('toTop');
+  var ticking = false;
+
+  function onScroll() {
+    var y = window.scrollY || window.pageYOffset;
+    header.classList.toggle('is-scrolled', y > 12);
+    toTop.classList.toggle('is-visible', y > 600);
+    ticking = false;
+  }
+
+  window.addEventListener('scroll', function () {
+    if (!ticking) {
+      window.requestAnimationFrame(onScroll);
+      ticking = true;
+    }
+  }, { passive: true });
+  onScroll();
+
+  toTop.addEventListener('click', function () {
+    window.scrollTo({ top: 0, behavior: 'smooth' });
+  });
+
+  /* ---------- Scroll spy ---------- */
+  var navLinks = Array.prototype.slice.call(document.querySelectorAll('.nav a'));
+  var sections = Array.prototype.slice.call(document.querySelectorAll('section[id]'));
+
+  if ('IntersectionObserver' in window && sections.length) {
+    var spy = new IntersectionObserver(function (entries) {
+      entries.forEach(function (entry) {
+        if (!entry.isIntersecting) return;
+        var id = entry.target.getAttribute('id');
+        navLinks.forEach(function (link) {
+          link.classList.toggle('active', link.getAttribute('href') === '#' + id);
+        });
+      });
+    }, { rootMargin: '-45% 0px -50% 0px', threshold: 0 });
+
+    sections.forEach(function (s) { spy.observe(s); });
+  }
+
+  /* ---------- Mobile drawer ---------- */
+  var menuBtn = document.getElementById('menuBtn');
+  var drawer = document.getElementById('drawer');
+  var overlay = document.getElementById('drawerOverlay');
+  var drawerClose = document.getElementById('drawerClose');
+
+  function openDrawer() {
+    overlay.hidden = false;
+    requestAnimationFrame(function () {
+      drawer.classList.add('is-open');
+      overlay.classList.add('is-open');
+    });
+    menuBtn.classList.add('is-open');
+    menuBtn.setAttribute('aria-expanded', 'true');
+    drawer.setAttribute('aria-hidden', 'false');
+    document.body.style.overflow = 'hidden';
+  }
+
+  function closeDrawer() {
+    drawer.classList.remove('is-open');
+    overlay.classList.remove('is-open');
+    menuBtn.classList.remove('is-open');
+    menuBtn.setAttribute('aria-expanded', 'false');
+    drawer.setAttribute('aria-hidden', 'true');
+    document.body.style.overflow = '';
+    window.setTimeout(function () { overlay.hidden = true; }, 380);
+  }
+
+  menuBtn.addEventListener('click', function () {
+    drawer.classList.contains('is-open') ? closeDrawer() : openDrawer();
+  });
+  drawerClose.addEventListener('click', closeDrawer);
+  overlay.addEventListener('click', closeDrawer);
+
+  document.querySelectorAll('.drawer-nav a').forEach(function (link) {
+    link.addEventListener('click', closeDrawer);
+  });
+
+  document.addEventListener('keydown', function (e) {
+    if (e.key === 'Escape' && drawer.classList.contains('is-open')) closeDrawer();
+  });
+
+  /* ---------- Footer year ---------- */
+  var yearEl = document.getElementById('year');
+  if (yearEl) yearEl.textContent = new Date().getFullYear();
+})();
+</script>
+</body>
+</html>
